@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo - Manager</title>
+    <meta name="description" content="A futuristic cyberpunk todo list with insane visual effects" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <div class="container">
+      <header class="header">
+        <h1 class="title glitch" data-text="TODO">
+          <span class="title-main">TODO</span>
+          <span class="title-shadow">TODO</span>
+        </h1>
+        <div class="subtitle">TODO TASK MANAGER</div>
+      </header>
+
+      <div class="todo-container">
+        <div class="input-section">
+          <div class="input-wrapper">
+            <input type="text" id="todoInput" placeholder="Enter your mission..." class="todo-input">
+            <button id="addBtn" class="add-btn">
+              <span class="btn-text">ADD TASK</span>
+              <div class="btn-glow"></div>
+            </button>
+          </div>
+        </div>
+
+        <div class="stats-panel">
+          <div class="stat-item">
+            <span class="stat-value" id="totalTasks">0</span>
+            <span class="stat-label">TOTAL</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" id="completedTasks">0</span>
+            <span class="stat-label">COMPLETED</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" id="pendingTasks">0</span>
+            <span class="stat-label">PENDING</span>
+          </div>
+        </div>
+
+        <div class="todo-list" id="todoList"></div>
+
+        <div class="floating-elements">
+          <div class="floating-orb orb-1"></div>
+          <div class="floating-orb orb-2"></div>
+          <div class="floating-orb orb-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <canvas id="particleCanvas"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>
